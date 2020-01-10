@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+	<div class = "container">
+	<br>
+		<label class = "h1"  ><u>Registration</u> <u>Page</u></label>
+	<br>
+        <label class="l1 error">All Fields are Mandatory</label>
+        <br><br>
+	
+	
+	<div class = "register_border">
+	<form name = "form1" method = "post" id = "form1" >
+	<label class = "l1">First Name </label><span class = "star">*</span><br>
+	<input type = "text" placeholder = " First Name" class = "t1" id = "t1" ><br>
+        <span class = "error" id = "ferror" ></span> 
+        <br>
+	
+	<label class = "l1">Last Name </label><span class = "star">*</span>  <br>
+	<input type = "text" placeholder = " Last Name" class = "t1" id = "t2" ><br>
+        <span class = "error" id = "lerror" ></span><br>
+	
+	<label class = "l1">Mobile No. </label><span class = "star">*</span><span class = "error" id = "merror" ></span>  <br>
+	<input type = "text" placeholder = " Mobile" class = "t1" id = "t3" maxlength = "10" ><br><br>
+	
+	<label class = "l1">Email </label><span class = "star">*</span> <span class = "error" id = "eerror" ></span> <br>
+	<input type = "text" placeholder = " Email" class = "t1" id = "t4"   ><br><br>
+	
+	<label class = "l1">Gender </label><span class = "star">*</span>
+	<input type = "radio" class = "t2" name = "gender"  id = "t7" value = "Male" >&nbsp;<label class = "l1">Male </label>&nbsp;
+	<input type = "radio" class = "t2" name = "gender" id = "t8" value = "Female">&nbsp;<label class = "l1">Female </label>&nbsp;
+	<input type = "radio" class = "t2" name = "gender" id = "t9" value = "Other">&nbsp;<label class = "l1">Other </label>&nbsp;
+        <br> <span class = "error" id = "gerror" ></span> &nbsp;<br>
+	
+	
+         <label class = "l1">Date OF Birth</label><span class = "star">*</span> &nbsp;<span class = "error" id = "derror" ></span><br>
+         <input type ="text" id="datepicker-13" class="t1" placeholder="MM/DD/YYYY" >        	
+	<br><br>
+
+	<label class = "l1">Password </label><span class = "star">*</span> <span class = "error" id = "perror" ></span> <br>
+	<input type = "password" placeholder = " Password" class = "t1" id = "t5" ><br><br>
+	
+	<label class = "l1">Confirm Password </label><span class = "star">*</span> <span class = "error" id = "cperror" ></span> <br>
+	<input type = "password" placeholder = " Confirm Password" class = "t1" id = "t6" ><br><br>
+	
+       <label class = "l1">Please Fill Captcha</label><span class = "star">*</span><br>
+	
+	<div class = "row">
+	<div class = "col-md-4">
+	<label class = "t2" id = "cap" style = "background:lightgrey;padding:5px 8px;" ></label>&nbsp;
+        <button type ="button" onclick="capctchaChange()" class="b2" ><i class="fa fa-rotate-left" style="font-size:24px;"></i></button></div>
+	
+	<div class = "col-md-8">
+	<input type = "text" class = "t1" id = "t10" >&nbsp;<span class = "error" id = "caperror" ></span><br><br>
+	</div>
+	</div>
+	
+	<div class = "buttonSection">
+	<button type = "submit" value = "Submit" class = "b1" id = "submitData">Submit</button>&nbsp;
+	<button type = "reset" value = "Reset" class = "b1" id = "resetData">Clear</button> <br>
+	<span class = "success" id = "success"></span>
+	</div>
+	
+	</form>
+	</div>
+	
+	</div>
+	<script src = "registerData.js"></script>
+        <script>
+            
+   </script>
+	</body>
+	</html>
